@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voodoo Webstore</title>
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/NtLuSr7.png">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Your HTML content here -->
+    <div class="header">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Voodoo_Logo.svg" alt="Voodoo Logo">
+         </div>
+        <div class="menu">
+            <div class="menu-item"><a href="https://store.supercell.com/game/clashofclans">Games</a></div>
+            <div class="menu-item"><a href="https://store.supercell.com/game/clashroyale">Publishing</a></div>
+            <div class="menu-item"><a href="https://store.supercell.com/game/brawlstars">Apps</a></div>
+            <div class="menu-item"><a href="https://store.supercell.com/game/hayday">Music</a></div>
+            <div class="menu-item"><a href="https://store.supercell.com/game/hayday">Resources</a></div>
+        </div>
+        <div class="cart">
+            <a href="checkoutpage.html">
+            <button id="transparencyBtn">Cart</button>
+            </a>
+        </div>
+    </div>
+    
+  
+    <div class="hero-container">
+        <img class="hero-image" src="https://www.datocms-assets.com/62418/1654775899-hero-publishing.png?fm=webp&h=800&w=1920" alt="Hero Image">
+         <img class="MobHeroImage" src=https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_MobControl_image1280w.jpg alt="MobHeroImage">
+        </div>
+
+       <h1 class="cart-header">Choose from the following Coin Packages to up your MobControl Game!</h1>
+
+    <div class="container">
+        <div class="gold-pass-container chest-gems-container">
+            <a href="#" id="smallCoins"><img class="gold-pass-image" src="https://i.imgur.com/Ux5EjgS.png" alt="Small Coins"></a>
+        </div>
+        <div class="extra-image chest-gems-container">
+            <a href="#" id="mediumCoins"><img src="https://i.imgur.com/7bcEBLz.png" alt="Medium Coins"></a>
+        </div>
+        <div class="extra-image chest-gems-container">
+            <a href="#" id="largeCoins"><img src="https://i.imgur.com/kPzY4eG.png" alt="Large Coins"></a>
+        </div>
+
+    </div>
+    
+    
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        Item added to cart
+    </div>
+    
+<!-- Link to external JavaScript file -->
+<script src="javascript.js"></script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+          appId: "cf532c5e-5be2-4b00-ab6d-3d3d72ca9124",
+        });
+    });
+</script>
+</body>
+</html>
