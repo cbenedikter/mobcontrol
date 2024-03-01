@@ -1,0 +1,204 @@
+   
+/* Global styles */
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 0 20px;
+    display: flex;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f9ff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    padding-left: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    font-size: 28px;
+    margin-right: 20px;
+    color: #0055ff;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #353c4c;
+    margin-right: 50px
+}
+
+.menu-item a:hover {
+    color: #0055ff; /* Color on hover */
+}
+
+.cart button {
+    background-color: #0055ff;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Add transition effect */
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 50px; 
+    top: 20px;
+}
+
+
+
+/* Hero section styles */
+.hero-container {
+    margin-top: 20px;
+    padding: 0 40px;
+    position: relative; /* Added for positioning the text */
+    display: inline-block; /* Ensures container only takes up as much width as the image */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.MobHeroImage {
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+
+/* Gold Pass and Extra Image container styles */
+.chest-gems-container {
+    margin-left: 100px;
+}
+
+.gold-pass-image,
+.extra-image img {
+    width: 320px; /* Adjust width as needed */
+    height: auto;
+    border: 2px solid transparent; /* Add transparent border */
+    transition: border-color 0.3s ease; /* Add transition effect for border */;
+    padding-bottom: 50px;
+    margin-left: 100px;
+}
+
+.gold-pass-image.clicked,
+.extra-image.clicked img {
+    border-color: gold; /* Change border color to gold when clicked */
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.cart-header {
+    margin-left: 100px; 
+}
+
+/* CSS Style for checkout page */
+
+
+/* Background image for checkoutpage.html */
+body.checkout-page {
+    background-image: url('https://www.datocms-assets.com/62418/1695643535-home-hero-2.png?dpr=2&fm=webp&h=800&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Add padding to specific elements */
+
+.checkout-heading {
+    margin-left: 600px; 
+}
+
+#clickedImageContainer {
+    padding: 50px;
+    padding-left: 750px;
+}
+
+.checkout-heading {
+    font-size: 32px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+
+
+.checkout button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.checkout {
+    padding: 20px; /* Adjust the value as needed */
+    padding-left: 800px;
+}
+
+.returnToStore button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.returnToStore {
+    padding: 20px;
+    padding-left: 800px;
+}
+
+.clearCart button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.clearCart {
+    padding: 20px;
+    padding-left: 800px;
+    }
