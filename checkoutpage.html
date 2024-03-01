@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voodoo Checkout</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/NtLuSr7.png">
+</head>
+<body class="checkout-page">
+
+    
+    <!-- Your HTML content here -->
+    <h1 class="checkout-heading"> You have the following in your cart</h1>
+
+<div id="clickedImageContainer">
+    <!-- The clicked image will be displayed here -->
+</div>
+
+<div class="checkout">
+     <button id="checkout">Checkout</button>
+</div>
+
+  <div class="returnToStore">
+    <a href="index.html">
+    <button id="returnToStore">Back to Store</button>
+    </a>
+  </div>
+
+  <div class="clearCart">
+       <button id="clearCart">Clear Cart</button>
+   </div>
+
+    <!-- Script to show the product image -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+        const clickedImage = localStorage.getItem('clickedImage');
+        if (clickedImage) {
+            const clickedImageContainer = document.getElementById('clickedImageContainer');
+            const img = document.createElement('img');
+            img.src = clickedImage;
+            img.alt = 'Clicked Image';
+            clickedImageContainer.appendChild(img);
+        }
+});
+</script>
+
+ <!-- Script to show clear cart -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+        const clearCartButton = document.querySelector('.clearCart button'); // Select the clear cart button
+        clearCartButton.addEventListener('click', () => { // Add a click event listener
+            const clickedImageContainer = document.getElementById('clickedImageContainer');   // Remove the image element from the DOM
+            clickedImageContainer.innerHTML = '';
+            });
+});
+</script>
+
+
+<script src="checkoutjavascript.js"></script>
+
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+        appId: "cf532c5e-5be2-4b00-ab6d-3d3d72ca9124",
+        });
+    });
+</script>
+</body>
+</html>
